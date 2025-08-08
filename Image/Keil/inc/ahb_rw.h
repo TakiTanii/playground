@@ -1,0 +1,10 @@
+void write_ahb8(unsigned long ahb_addr, char write_value);
+char read_ahb8(unsigned long ahb_addr);
+void write_ahb16(unsigned long ahb_addr, unsigned short write_value);
+unsigned short read_ahb16(unsigned long ahb_addr);
+void write_ahb32(unsigned long ahb_addr, volatile unsigned long write_value);
+unsigned long read_ahb32(unsigned long ahb_addr);
+void read_cmp8(int addr,char val);
+void read_cmp16(int addr,short val);
+void read_cmp32(int addr,int val);
+void poll_ahb32(int addr,int n);
